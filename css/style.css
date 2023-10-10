@@ -36,6 +36,27 @@ body {
     display: flex;
     padding: 0;
     background: transparent;
-    border: none;
-    
+    border: none;  
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__block {
+    display: flex;
+    align-items: center;
+}
+.footer__text {
+    color: #4D5053;
+    font-size: 22px;
+    max-width: 250px;
+}
+.footer__mail, .footer__tel {
+    color: #4D5053;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 86px;
 }
