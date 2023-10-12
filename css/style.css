@@ -174,10 +174,14 @@ button {
     margin: 0;
 }
 /*About*/
+.about__section {
+    margin-bottom: 200px;
+}
 .about {
     display: flex;
+    justify-content: space-between;
 }
-.about__text {
+.about__box {
     max-width: 460px;
 }
 .about__title {
@@ -204,15 +208,14 @@ button {
     height: 93px;
 }
 
-
-
-
 .about__thumb {
+    flex-basis: 660px;
     position: relative;
     overflow: hidden;
     border-radius: 0 30vh 0 30vh;
-    padding-top: 50vh;
-    padding-bottom: 50vh;   
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+    height: 0px;
 }
 .about__img {
     width: 100%;
@@ -222,4 +225,18 @@ button {
     left: 0;
     object-fit: cover;
     z-index: -1;
+}
+.link {
+    color: #fff;
+    padding: 26px 31px;
+    border-radius: 18px;
+    background: #292F36;
+    box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 125%; 
+    letter-spacing: 0.36px;
 }
