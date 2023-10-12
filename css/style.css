@@ -7,6 +7,10 @@ body {
     background-image: url(../img/line.svg);
     background-repeat-x: no-repeat;
     background-position: center;
+    font-size: 22px;
+}
+ul {
+    margin: 0;
 }
 button {
     cursor: pointer;
@@ -22,7 +26,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 43px 0 45px 0;
+    padding: 40px 0;
 }
 .header__nav {
     display: flex;
@@ -123,3 +127,21 @@ button {
     width: 22px;
     height: 22px;
 }
+/*Hero*/
+.hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 0 30vh;
+    padding-top: 30vh;
+    padding-bottom: 40vh;   
+}
+.hero__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+ 
