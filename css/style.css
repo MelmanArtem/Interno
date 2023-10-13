@@ -16,6 +16,7 @@ p {
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.22px;
+    margin: 0;
 }
 ul {
     margin: 0;
@@ -192,11 +193,13 @@ button {
     font-weight: 400;
     line-height: 125%;
     letter-spacing: 1px;
+    margin: 43px 0 33px 0;
 }
 .about__tel {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin: 45px 0 47px 0;
 }
 .about__btn {
     background-image: url(../img/Call.svg);
@@ -204,8 +207,8 @@ button {
     background-repeat: no-repeat;
     display: block;
     border-radius: 50%;
-    width: 93px;
-    height: 93px;
+    width: 90px;
+    height: 90px;
 }
 
 .about__thumb {
@@ -215,7 +218,7 @@ button {
     border-radius: 0 30vh 0 30vh;
     padding-top: 35vh;
     padding-bottom: 35vh;
-    height: 0px;
+    height: 26px;
 }
 .about__img {
     width: 100%;
@@ -227,8 +230,9 @@ button {
     z-index: -1;
 }
 .link {
+    position: relative;
     color: #fff;
-    padding: 26px 31px;
+    padding: 26px 55px 26px 31px;
     border-radius: 18px;
     background: #292F36;
     box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
@@ -239,4 +243,16 @@ button {
     font-weight: 600;
     line-height: 125%; 
     letter-spacing: 0.36px;
+    margin-bottom: 43px;
+}
+.link::after {
+    content: "";
+    width: 17px;
+    height: 16px;
+    background: url(../img/strelka.svg)no-repeat;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    overflow: hidden;
 }
