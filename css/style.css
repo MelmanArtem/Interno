@@ -20,6 +20,7 @@ p {
 }
 ul {
     margin: 0;
+    list-style-type: none;
 }
 button {
     cursor: pointer;
@@ -329,4 +330,34 @@ button {
     align-items: center;
     justify-content: space-around;
     margin: 178px 0;
+}
+.stats__section {
+    width: 100%;
+    background-color: #F4F0EC;
+    margin-bottom: 178px;
+    padding: 150px 0;
+}
+.stats__list {
+    display: flex;  
+}
+.stats__item {
+    position: relative;
+    text-align: center;
+    flex-basis: 25%;
+}
+.stats__item::after {
+    content: ""; 
+    display: block;
+    width: 1px;
+    height: 130px;
+    background: #CDA274;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+.stats__item:last-child:after {
+    display: none;
+}
+.stats__title {
+    color: #CDA274;
 }
