@@ -110,8 +110,8 @@
                     <p class="swiper-author">BUCKS BUNNY</p>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiper-feedback__next"></div>
+                <div class="swiper-button-prev swiper-feedback__prev"></div>
             </div>
         </div>
     </section>
@@ -203,20 +203,23 @@
                 <h2 class="title">Personally Newsletter</h2>
                 <p class="text">A bi-weekly newsletter of design inspiration.</p>
                 <div class="subscribe_box">
-                    <input type="email">
-                    <button type="submit"></button>
+                    <input class="subscribe__email" type="email" placeholder="Email address">
+                    <button class="subscribe__btn" type="submit">Subscribe</button>
                 </div>
             </div>
         </div>
     </section>
     <section class="contact__section">
         <div class="container">
-            <form action="">
-                <input class="contact-form__input" type="text">
-                <input class="contact-form__input" type="email">
-                <textarea class="contact-form__textarea" name="" id="" cols="30" rows="10"></textarea>
+            <div class="title title__contact">Creative project? Let's have a productive talk.</div>
+            <form class="contact-form">
+                <input class="contact-form__input" type="text" placeholder="Name">
+                <input class="contact-form__input" type="email" placeholder="Email">
+                <textarea class="contact-form__textarea" name="" id="" cols="30" rows="10" placeholder="Hello Iam Intrested in.."></textarea>
                 <div class="contact-form__btn">
-                    <button type="submit"></button>
+                    <button type="submit">
+                        <a href="https://www.youtube.com/" class="link link__contact">Send Now</a>
+                    </button>
                 </div>
             </form>
         </div>
