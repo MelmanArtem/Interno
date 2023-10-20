@@ -70,7 +70,7 @@ button {
 /*footer*/
 .bg {
     background-color: #F4F0EC;
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .footer {
     display: flex;
@@ -87,6 +87,9 @@ button {
 .footer__info a {
     color: #4D5053;
     text-decoration: none;
+}
+.footer__info p {
+    max-width: 260px;
 }
 /*modal window*/
 .overlay {
@@ -384,18 +387,6 @@ article {
     box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
     padding: 21px;
 }
-article:nth-child(2) {
-    background-color:#F4F0EC;
-}
-article:nth-child(2):hover {
-    background-color: #fff;
-}
-article:nth-child(2) .articles__link {
-    background-color:#fff;
-}
-article:nth-child(2):hover .articles__link {
-    background-color:#F4F0EC;
-}
 .articles__thumb {
     position: relative;
     overflow: hidden;
@@ -577,17 +568,8 @@ article:nth-child(2):hover .articles__link {
     display: none;
 }
 /*ARTICLE*/
-article:nth-child(2) .article-main__link {
-    background-color:#fff;
-}
-article:nth-child(2):hover .article-main__link {
-    background-color:#F4F0EC;
-}
 .article-main {
     margin-bottom: 150px;
-}
-.article-main article {
-    background: #fff;
 }
 .articles__item,
 .article-main__item {
@@ -597,7 +579,8 @@ article:nth-child(2):hover .article-main__link {
     background-color: #fff;
     transition: .4s;
 }
-.articles__item:hover {
+.articles__item:hover,
+.article-main__item:hover  {
     background-color: #F4F0EC;
 }
 .article-main__item {
@@ -633,6 +616,7 @@ article:nth-child(2):hover .article-main__link {
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 2vh 2vh 0vh 0vh;
+    object-fit: cover;
 }
 .articles__title, 
 .article-main__title {
@@ -688,8 +672,8 @@ article:nth-child(2):hover .article-main__link {
     width: 8px;
     height: 16px;
 }
-.articles__item:hover .articles__link,
-.articles__item:hover .article-main__link {
+.articles__item:hover .article-main__link ,
+.article-main__item:hover .article-main__link {
     background-color: #FFFFFF;
 }
 .article {
