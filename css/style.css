@@ -198,7 +198,7 @@ button {
     padding: 9px 30px;
     border-radius: 10px;
     background-color: #F4F0EC;
-    transition: .3s;  
+    transition: .4s;  
 }
 .tags-list > a:hover {
     color: #FFF;
