@@ -390,15 +390,25 @@ button {
     object-fit: cover;
 }
 /*TABS*/
+.tabs {
+    display: flex;
+    justify-content: space-around;
+}
 .tab-link {
 
 }
 .tab-link.active {
     background-color: #CDA274;
+    padding: 26px 66px;
 }
 .tab-content {
     display: none;
     animation: fading 1s;
+}
+.tab-content__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 @keyframes fading {
     from {
@@ -408,6 +418,11 @@ button {
         opacity: 1;
     }
 }
+
+
+
+
+
 
 /*footer*/
 .bg {
