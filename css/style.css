@@ -390,6 +390,20 @@ button {
     object-fit: cover;
 }
 /*TABS*/
+.thumb__portfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    border-radius: 37px 37px 0px 0px;
+    background-color: #FFFFFF;
+    padding: 41px 125px;
+}
+.page-article {
+    margin-bottom: 214px;
+}
 .tabs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -446,16 +460,6 @@ button {
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
 /*footer*/
 .bg {
     background-color: #F4F0EC;
@@ -919,7 +923,7 @@ article {
     flex-direction: column;
     position: absolute;
     bottom: 0%;
-    left: 38%;
+    left: 40%;
     border-radius: 37px 37px 0px 0px;
     background-color: #FFFFFF;
     padding: 41px 78px;
