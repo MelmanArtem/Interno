@@ -250,54 +250,54 @@ button {
     padding: 0;
 }
 /*POST*/
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
+.main-article h1,
+.main-article h2,
+.main-article h3,
+.main-article h4,
+.main-article h5,
+.main-article h6 {
     font-family: 'DM Serif Display', serif;
     color: #292F36;
     line-height: 1.2;
     font-weight: 400;
 }
-.post h1 {
+.main-article h1 {
     font-size: 50px;
 }
-.post h2 {
+.main-article h2 {
     font-size: 45px;
 }
-.post h3 {
+.main-article h3 {
     font-size: 40px;
 }
-.post h4 {
+.main-article h4 {
     font-size: 38px;
 }
-.post h5 {
+.main-article h5 {
     font-size: 35px;
 }
-.post h6 {
+.main-article h6 {
     font-size: 30px;
 }
-.post a {
+.main-article a {
     color: #CDA274;
     text-decoration: none;
 }
-.post ul,
-.post ol {
+.main-article ul,
+.main-article ol {
     padding-left: 0;
     list-style-type: none;
     margin: 24px 0;
 }
-.post ol {
+.main-article ol {
     counter-reset: item;
 }
-.post ul > li, 
-.post ol > li {
+.main-article ul > li, 
+.main-article ol > li {
     position: relative;
     padding-left: 20px;
 }
-.post ul > li::before {
+.main-article ul > li::before {
     content: '';
     display: block;
     width: 8px;
@@ -308,7 +308,7 @@ button {
     top: 9px;
     left: 0px;
 }
-.post ol > li::before {
+.main-article ol > li::before {
     content: '';
     content: counter(item);
     counter-increment: item;
@@ -321,11 +321,11 @@ button {
     top: 1px;
     left: 0px;
 }
-.post ul > li + li, 
-.post ol > li + li {
+.main-article ul > li + li, 
+.main-article ol > li + li {
     margin-top: 32px;
 }
-.post figure {
+.main-article figure {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -333,7 +333,7 @@ button {
     border-radius: 50px;
     margin: 44px 0;
 }
-.post figure img {
+.main-article figure img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -342,7 +342,7 @@ button {
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
-.post blockquote {
+.main-article blockquote {
     font-family: 'DM Serif Display', serif;
     font-size: 25px;
     font-weight: 400;
@@ -358,7 +358,7 @@ button {
     margin-left: 0;
     margin-right: 0;
 }
-.post blockquote::before {
+.main-article blockquote::before {
     content: '';
     background-image: url(../img/blockquote.svg);
     background-size: cover;
@@ -367,12 +367,15 @@ button {
     height: 54px;
     margin: 0 auto 30px;
 }
-.post__date {
+.main-article__date {
     display: block;
     font-size: 16px;
     margin: 46px 0 48px 0;
 }
-.post__thumb {
+.main-article-body {
+    margin-bottom: 62px;
+}
+.main-article__thumb {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -380,7 +383,7 @@ button {
     border-radius: 50px;
     margin: 44px 0;
 }
-.post__thumb img {
+.main-article__thumb img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -389,6 +392,60 @@ button {
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+.post__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 0;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    margin-top: 62px;
+}
+.post__tags {
+    display: flex;
+    align-items: 20px;
+    gap: 20px;
+}
+.post__tags > span {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    line-height: 1.25px;
+}
+.post__tags > a {
+    font-size: 18px;
+    color: #292F36;
+    background-color: #F4F0EC;
+    border-radius: 10px;
+    padding: 13px 22px;
+}
+.post__tags > a:hover {
+    color: #FFF;
+    background-color: #292F36;
+}
+.post__social {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+}
+.post__social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*TABS*/
 .thumb__portfolio {
     display: flex;
