@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+
+                </a>
+                <nav>
+                    <ul class="header__nav">
+                        <li class="header__item"><a class="header__link" href="">Home</a></li>
+                        <li class="header__item"><a class="header__link" href="">Our Projects</a></li>
+                        <li class="header__item"><a class="header__link" href="">Blog</a></li>
+                        <li class="header__item"><a class="header__link" href="">Contact</a></li>
+                        <li class="header__item"><button class="header__search" onclick="openModal()"><img src="img/search.svg" alt="button"></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="details__bg">
+        <div class="thumb">
+            <img class="thumb__img" src="img/contact.jpg" alt="">
+            <div class="thumb__info">
+                <h2 class="title title__blog">Contact Us</h2>
+                <ul class="breadcrumbs">
+                    <li><a href="https://vk.com/artem_melman">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="page-content">
+        <div class="container">
+            <h2 class="title">We love meeting new people and helping them.</h2>
+            <div class="contact__box">
+                <div class="contact__info">
+                    <ul class="contact-list">
+                        <li class="contact-list__item contact-list__email">
+                            <a class="contact-list__link" href="mailto:melman@gmail.com">melman@gmail.com</a>
+                        </li>
+                        <li class="contact-list__item contact-list__tel">
+                            <a class="contact-list__link" href="tel:+79263806245">+79263806245</a>
+                        </li>
+                        <li class="contact-list__item contact-list__website">
+                            <a class="contact-list__link" href="https://vk.com/artem_melman">www.vk.com</a>
+                        </li>
+                    </ul>
+                    <div class="post">
+                        <div class="post__social post__social-contact">
+                            <a href="" target="_blank">
+                                <svg width="10" height="19" viewBox="0 0 10 19" 
+                                fill="none">
+                                    <path d="M9.02734 10.395H6.39062V18.27H2.875V10.395H-0.0078125V7.16064H2.875V4.66455C2.875 1.85205 4.5625 0.27002 7.12891 0.27002C8.35938 0.27002 9.66016 0.516113 9.66016 0.516113V3.29346H8.21875C6.8125 3.29346 6.39062 4.13721 6.39062 5.05127V7.16064H9.51953L9.02734 10.395Z" fill="#292F36"/>
+                                </svg>
+                            </a>
+                            <a href="" target="_blank">
+                                <svg width="19" height="16" viewBox="0 0 19 16" 
+                                fill="none">
+                                    <path d="M16.7969 4.59619C17.5 4.06885 18.1328 3.43604 18.625 2.69775C17.9922 2.979 17.2539 3.18994 16.5156 3.26025C17.2891 2.80322 17.8516 2.1001 18.1328 1.22119C17.4297 1.64307 16.6211 1.95947 15.8125 2.13525C15.1094 1.39697 14.1602 0.975098 13.1055 0.975098C11.0664 0.975098 9.41406 2.62744 9.41406 4.6665C9.41406 4.94775 9.44922 5.229 9.51953 5.51025C6.46094 5.33447 3.71875 3.85791 1.89062 1.64307C1.57422 2.17041 1.39844 2.80322 1.39844 3.50635C1.39844 4.77197 2.03125 5.89697 3.05078 6.56494C2.45312 6.52979 1.85547 6.38916 1.36328 6.10791V6.14307C1.36328 7.93604 2.62891 9.4126 4.31641 9.76416C4.03516 9.83447 3.68359 9.90479 3.36719 9.90479C3.12109 9.90479 2.91016 9.86963 2.66406 9.83447C3.12109 11.311 4.49219 12.3657 6.10938 12.4009C4.84375 13.3853 3.26172 13.9829 1.53906 13.9829C1.22266 13.9829 0.941406 13.9478 0.660156 13.9126C2.27734 14.9673 4.21094 15.5649 6.32031 15.5649C13.1055 15.5649 16.7969 9.9751 16.7969 5.08838C16.7969 4.9126 16.7969 4.77197 16.7969 4.59619Z" fill="#292F36"/>
+                                </svg>
+                            </a>
+                            <a href="" target="_blank">
+                                <svg width="17" height="17" viewBox="0 0 17 17" 
+                                fill="none">
+                                    <path d="M4.14062 16.1274V5.61572H0.871094V16.1274H4.14062ZM2.48828 4.20947C3.54297 4.20947 4.38672 3.33057 4.38672 2.27588C4.38672 1.25635 3.54297 0.412598 2.48828 0.412598C1.46875 0.412598 0.625 1.25635 0.625 2.27588C0.625 3.33057 1.46875 4.20947 2.48828 4.20947ZM16.3398 16.1274H16.375V10.3618C16.375 7.54932 15.7422 5.36963 12.4375 5.36963C10.8555 5.36963 9.80078 6.24854 9.34375 7.05713H9.30859V5.61572H6.17969V16.1274H9.44922V10.9243C9.44922 9.55322 9.69531 8.25244 11.3828 8.25244C13.0703 8.25244 13.1055 9.79932 13.1055 11.0298V16.1274H16.3398Z" fill="#292F36"/>
+                                </svg>
+                            </a>
+                            <a href="" target="_blank">
+                                <svg width="17" height="18" viewBox="0 0 17 18" 
+                                fill="none">
+                                    <path d="M8.70605 4.98389C6.33105 4.98389 4.43848 6.91357 4.43848 9.25146C4.43848 11.6265 6.33105 13.519 8.70605 13.519C11.0439 13.519 12.9736 11.6265 12.9736 9.25146C12.9736 6.91357 11.0439 4.98389 8.70605 4.98389ZM8.70605 12.0347C7.18457 12.0347 5.92285 10.8101 5.92285 9.25146C5.92285 7.72998 7.14746 6.50537 8.70605 6.50537C10.2275 6.50537 11.4521 7.72998 11.4521 9.25146C11.4521 10.8101 10.2275 12.0347 8.70605 12.0347ZM14.124 4.83545C14.124 4.27881 13.6787 3.8335 13.1221 3.8335C12.5654 3.8335 12.1201 4.27881 12.1201 4.83545C12.1201 5.39209 12.5654 5.8374 13.1221 5.8374C13.6787 5.8374 14.124 5.39209 14.124 4.83545ZM16.9443 5.8374C16.8701 4.50146 16.5732 3.31396 15.6084 2.34912C14.6436 1.38428 13.4561 1.0874 12.1201 1.01318C10.7471 0.938965 6.62793 0.938965 5.25488 1.01318C3.91895 1.0874 2.76855 1.38428 1.7666 2.34912C0.801758 3.31396 0.504883 4.50146 0.430664 5.8374C0.356445 7.21045 0.356445 11.3296 0.430664 12.7026C0.504883 14.0386 0.801758 15.189 1.7666 16.1909C2.76855 17.1558 3.91895 17.4526 5.25488 17.5269C6.62793 17.6011 10.7471 17.6011 12.1201 17.5269C13.4561 17.4526 14.6436 17.1558 15.6084 16.1909C16.5732 15.189 16.8701 14.0386 16.9443 12.7026C17.0186 11.3296 17.0186 7.21045 16.9443 5.8374ZM15.1631 14.1499C14.9033 14.8921 14.3096 15.4487 13.6045 15.7456C12.4912 16.1909 9.89355 16.0796 8.70605 16.0796C7.48145 16.0796 4.88379 16.1909 3.80762 15.7456C3.06543 15.4487 2.50879 14.8921 2.21191 14.1499C1.7666 13.0737 1.87793 10.4761 1.87793 9.25146C1.87793 8.06396 1.7666 5.46631 2.21191 4.35303C2.50879 3.64795 3.06543 3.09131 3.80762 2.79443C4.88379 2.34912 7.48145 2.46045 8.70605 2.46045C9.89355 2.46045 12.4912 2.34912 13.6045 2.79443C14.3096 3.0542 14.8662 3.64795 15.1631 4.35303C15.6084 5.46631 15.4971 8.06396 15.4971 9.25146C15.4971 10.4761 15.6084 13.0737 15.1631 14.1499Z" fill="#292F36"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="contact__form">
+                    <form class="contact-form">
+                        <input class="contact-form__input" type="text" placeholder="Name">
+                        <input class="contact-form__input" type="email" placeholder="Email">
+                        <input class="contact-form__input" type="url" placeholder="Subject">
+                        <input class="contact-form__input" type="tel" placeholder="Phone">
+                        <textarea class="contact-form__textarea" name="" id="" cols="30" rows="10" placeholder="Hello Iam Intrested in.."></textarea>
+                        <div class="contact-form__btn">
+                            <a href="https://www.youtube.com/" class="link link__contact">Send Now</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg">
+        <div class="container">
+            <div class="footer">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <div class="footer__info">
+                    <p>55 East Birchwood Ave. Russia, Moscow 108851</p>
+                    <a href="mailto:melman69rus@mail.ru">melman69rus@mail.ru</a>
+                    <a href="tel:+79263806245">(926) 380-6245</a>
+                </div>
+            </div>
+        </div> 
+    </footer>
+    <div class="overlay" id="overlay">
+        <div class="modal-search">
+            <div class="container">
+                <div class="modal-search__content">
+                    <input type="text" class="modal-search__input" placeholder="Search">
+                    <button type="submit" class="modal-search__btn"></button>
+                    <button type="button" class="modal-search__close" onclick="closeModal()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
