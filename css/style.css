@@ -503,6 +503,17 @@ button {
    background-color: #CDA274;
 }
 /*CONTACT*/
+.thumb__contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0%;
+    left: 36.6%;
+    border-radius: 37px 37px 0px 0px;
+    background-color: #FFFFFF;
+    padding: 41px 134px;
+}
 .contact__box {
     display: flex;
     justify-content: space-around;
@@ -572,15 +583,6 @@ button {
 .contact-form .contact-form__btn {
     text-align: right;
 }
-
-
-
-
-
-
-
-
-
 /*TABS*/
 .thumb__portfolio {
     display: flex;
@@ -588,7 +590,7 @@ button {
     flex-direction: column;
     position: absolute;
     bottom: 0%;
-    left: 40%;
+    left: 36.6%;
     border-radius: 37px 37px 0px 0px;
     background-color: #FFFFFF;
     padding: 41px 125px;
@@ -1119,7 +1121,7 @@ article {
     flex-direction: column;
     position: absolute;
     bottom: 0%;
-    left: 40%;
+    left: 36.6%;
     border-radius: 37px 37px 0px 0px;
     background-color: #FFFFFF;
     padding: 41px 78px;
@@ -1260,7 +1262,7 @@ article {
     width: 8px;
     height: 16px;
 }
-.articles__item:hover .article-main__link ,
+.articles__item:hover .articles__link ,
 .article-main__item:hover .article-main__link {
     background-color: #FFFFFF;
 }
@@ -1310,4 +1312,59 @@ article {
     display: block;
     width: 8px;
     height: 16px; 
+}
+/*ERROR*/
+.page-error {
+    position: relative;
+    padding: 220px 0 267px 0
+}
+.error__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 47%;
+    height: 100%;
+}
+.error__thumb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 0 clamp(100px, 17vw, 353px);
+}
+.error__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.error__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 250px;
+    font-weight: 400;
+    line-height: 125%; /* 43.75px */
+    color: #CDA274;
+    margin-top: 0px;
+    margin-bottom: -38px;
+}
+.error__text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.5; /* 43.75px */
+    letter-spacing: 0.01em;
+    color: #292F36;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    max-width: 485px;
+}
+.error__btn {
+    padding: 24px 76px 24px 54px;
+}
+.error__btn::after {
+    top: 28px;
+    right: 50px;
 }

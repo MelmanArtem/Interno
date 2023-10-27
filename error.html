@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interno</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="#" class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <nav>
+                    <ul class="header__nav">
+                        <li class="header__item"><a class="header__link" href="">Home</a></li>
+                        <li class="header__item"><a class="header__link" href="">Our Projects</a></li>
+                        <li class="header__item"><a class="header__link" href="">Blog</a></li>
+                        <li class="header__item"><a class="header__link" href="">Contact</a></li>
+                        <li class="header__item"><button class="header__search" onclick="openModal()"><img src="img/search.svg" alt="button"></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="page-error">
+        <div class="container">
+            <h2 class="error__title">404</h2>
+            <p class="error__text">We are sorry, but the page you requested was not found</p>
+            <a href="https://www.youtube.com/" class="link link__contact error__btn">Back To Home</a>
+        </div>
+        <div class="error__bg">
+            <div class="error__thumb">
+                <img class="error__img" src="img/error-img.jpg" alt="error" >
+            </div>
+        </div>
+    </section>
+    <div class="overlay" id="overlay">
+        <div class="modal-search">
+            <div class="container">
+                <div class="modal-search__content">
+                    <input type="text" class="modal-search__input" placeholder="Search">
+                    <button type="submit" class="modal-search__btn"></button>
+                    <button type="button" class="modal-search__close" onclick="closeModal()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
