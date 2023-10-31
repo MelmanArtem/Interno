@@ -668,15 +668,16 @@ button {
     display: flex;
     align-items: center;
     gap: 86px;
-    font-size: 22px;
     color: #4D5053;
 }
 .footer__info a {
     color: #4D5053;
     text-decoration: none;
+    font-size: 22px;
 }
 .footer__info p {
     max-width: 260px;
+
 }
 /*modal window*/
 .overlay {
@@ -1486,9 +1487,12 @@ article {
         font-size: 30px;
         max-width: 450px;
     }
+    .content {
+        grid-template-columns: 1fr;
+    }
     .footer__info {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 170px;
         grid-template-rows: repeat(2, auto);
         gap: 0px 50px;
         align-items: start;
@@ -1499,6 +1503,9 @@ article {
     }
     .footer__info a {
         text-align: right;
+    }
+    .footer__info a, .footer__info p {
+        font-size: 18px;
     }
 }
 @media (max-width: 768px) {
@@ -1516,5 +1523,17 @@ article {
     }
     .contact-form .contact-form__btn {
         text-align: center;
+    }
+    .footer {
+        align-items: start;
+    }
+    .footer__info {
+        grid-template-columns: 1fr;
+    }
+    .footer__address {
+        text-align: right;
+    }
+    .footer__info {
+        gap: 15px;
     }
 }
