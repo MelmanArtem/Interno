@@ -1112,7 +1112,7 @@ article {
     grid-template-columns: repeat(2, 1fr);
     max-width: 800px;
     margin: 0 auto;
-    column-gap: 40px;
+    gap: 57px 36px;
 }
 .contact-form__input {
     border: none;
@@ -1574,9 +1574,16 @@ article {
     .swiper-feedback__slide {
         padding: 50px 150px 65px;
     }
+    .stats__section {
+        margin-bottom: 100px;
+        padding: 80px 0;
+    }
     .stats__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .stats__item:nth-child(2)::after {
+        display: none;
     }
     .articles {
         grid-template-columns: 1fr;
@@ -1586,15 +1593,24 @@ article {
     }
     .footer {
         align-items: start;
+        display: inherit;
+        text-align: center;
     }
     .footer__info {
         grid-template-columns: 1fr;
     }
     .footer__address {
-        text-align: right;
+        text-align: center;
+    }
+    .footer__info a {
+        text-align: center;
+    }
+    .footer__info p {
+       max-width: none;
     }
     .footer__info {
         gap: 15px;
+        margin-top: 30px;
     }
 }
 @media (max-width: 600px) {
@@ -1623,4 +1639,46 @@ article {
     .title {
         font-size: 30px;
     }
+    .suscribe {
+        & h2, p {
+            max-width: 311px;
+            text-align: center;
+        }
+    }
+    .title__contact {
+        margin-bottom: 50px;
+    }
+    .contact-form {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .contact-form__textarea, .contact-form__btn, .contact-form__checkbox {
+        grid-column: 1 / 2;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer__address {
+        text-align: center;
+    }
 }
+@media (max-width: 500px) {
+    .stats__section {
+        padding: 50px 0;
+    }
+    .stats__list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .stats__item {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #CDA274;
+    }
+    .stats__item:last-child  {
+        border-bottom: none;
+    }
+    .stats__item::after {
+        display: none;
+    }
+}
+
