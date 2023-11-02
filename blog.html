@@ -11,18 +11,19 @@
     <header>
         <div class="container">
             <div class="header">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/logo.svg" alt="logo">
                 </a>
                 <nav>
                     <ul class="header__nav">
-                        <li class="header__item"><a class="header__link" href="">Home</a></li>
-                        <li class="header__item"><a class="header__link" href="">Our Projects</a></li>
-                        <li class="header__item"><a class="header__link" href="">Blog</a></li>
-                        <li class="header__item"><a class="header__link" href="">Contact</a></li>
+                        <li class="header__item"><a class="header__link" href="index.html">Home</a></li>
+                        <li class="header__item"><a class="header__link" href="portfolio.html">Our Projects</a></li>
+                        <li class="header__item"><a class="header__link" href="blog.html">Blog</a></li>
+                        <li class="header__item"><a class="header__link" href="contact.html">Contact</a></li>
                         <li class="header__item"><button class="header__search" onclick="openModal()"><img src="img/search.svg" alt="button"></button></li>
                     </ul>
                 </nav>
+                <button class="header__menu" onclick="openModalMenu()"></button>
             </div>
         </div>
     </header>
@@ -30,7 +31,7 @@
         <div class="thumb">
             <img class="thumb__img" src="img/blogbg.jpg" alt="">
             <div class="thumb__info">
-                <h2 class="title title__blog">Articles & News</h2>
+                <h2 class="title thumb__title">Articles & News</h2>
                 <ul class="breadcrumbs">
                     <li><a href="https://vk.com/artem_melman">Home</a></li>
                     <li><a href="#">Blog</a></li>
@@ -55,7 +56,7 @@
                         </p>
                         <div class="article-main__info">
                             <span class="articles-main__date">25 April, 2023 </span>
-                            <a class="article-main__link" href="#"></a>
+                            <a class="article-main__link" href="post.html"></a>
                         </div>
                     </div>
                 </article>
@@ -146,11 +147,11 @@
     <footer class="bg">
         <div class="container">
             <div class="footer">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/logo.svg" alt="logo">
                 </a>
                 <div class="footer__info">
-                    <p class="footer__address">55 East Birchwood Ave. Russia, Moscow 108851</p>
+                    <p class="footer__address">55 East Birchwood Ave. <br> Russia, Moscow 108851</p>
                     <a href="mailto:melman69rus@mail.ru">melman69rus@mail.ru</a>
                     <a href="tel:+79263806245">(926) 380-6245</a>
                 </div>
@@ -165,6 +166,23 @@
                     <button type="submit" class="modal-search__btn"></button>
                     <button type="button" class="modal-search__close" onclick="closeModal()"></button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlayMenu">
+        <div class="modal">
+            <div class="container">
+                <div class="modal__content">
+                    <nav>
+                        <ul class="header__nav">
+                            <li class="header__item"><a class="header__link" href="index.html">Home</a></li>
+                            <li class="header__item"><a class="header__link" href="portfolio.html">Our Projects</a></li>
+                            <li class="header__item"><a class="header__link" href="blog.html">Blog</a></li>
+                            <li class="header__item"><a class="header__link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <button type="button" class="modal__close" onclick="closeModalMenu()"></button>
             </div>
         </div>
     </div>
