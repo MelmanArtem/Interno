@@ -1509,6 +1509,13 @@ article {
         grid-template-columns: 1fr;
     }
 
+    .tab-content__box {
+        gap: 3vw;
+    }
+    .tab-content__thumb {
+        height: 40vw;
+    }
+
     .footer__info {
         display: grid;
         grid-template-columns: 1fr 170px;
@@ -1530,6 +1537,13 @@ article {
 @media (max-width: 768px) {
     .container {
         max-width: 600px
+    }
+
+    .header__item {
+        margin-left: 22px;
+    }
+    .header__link {
+        font-size: 18px;
     }
 
     .page {
@@ -1627,7 +1641,21 @@ article {
     }
     .hero__section {
         margin-bottom: 0;
-    }.swiper-feedback {
+    }
+    .thumb__info {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .tabs {
+        padding: 1vw;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tab-link {
+        padding: 20px 0;
+    }
+    .swiper-feedback {
         margin-top: 100px;
     }
     .swiper-feedback__slide {
