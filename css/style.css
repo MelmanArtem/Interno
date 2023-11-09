@@ -242,8 +242,8 @@ button {
 }
 .author {
     border-top: 1px solid #e5e5e5;
-    margin-top: 50px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .author__head {
     display: flex;
@@ -1552,6 +1552,16 @@ article {
         height: 40vw;
     }
 
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: 0;
+    }
+    .post__comments {
+        margin: 0;
+    }
+
     .footer__info {
         display: grid;
         grid-template-columns: 1fr 170px;
@@ -1635,6 +1645,12 @@ article {
         padding: 0px 18px 0 0;
     }
 
+    .tags-list {
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .contact-list__item {
         display: inherit;
         gap: 8px;
@@ -1645,6 +1661,14 @@ article {
     .contact-form .contact-form__btn {
         text-align: center;
     }
+
+    .checkbox:checked + label::before {
+        top: calc(50% - 22px);
+    }
+    .checkbox:checked + label::after {
+        top: calc(50% - 18px);
+    }
+
     .footer {
         align-items: start;
         display: inherit;
@@ -1757,6 +1781,7 @@ article {
     }
     .contact-form__textarea, .contact-form__btn, .contact-form__checkbox {
         grid-column: 1 / 2;
+        margin-bottom: 30px;
     }
     .contact-list {
         grid-template-columns: 1fr;
@@ -1774,6 +1799,17 @@ article {
     .contact-form__textarea {
         margin-bottom: 50px;
     }
+
+    .checkbox:checked + label, .checkbox:not(:checked) + label {
+        font-size: 16px;
+    }
+
+    .post__footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
 
     .footer {
         padding: 50px 0;
