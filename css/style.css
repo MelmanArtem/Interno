@@ -1662,12 +1662,6 @@ article {
         text-align: center;
     }
 
-    .checkbox:checked + label::before {
-        top: calc(50% - 22px);
-    }
-    .checkbox:checked + label::after {
-        top: calc(50% - 18px);
-    }
 
     .footer {
         align-items: start;
