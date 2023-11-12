@@ -1762,6 +1762,9 @@ article {
     .articles__item, .article-main__item {
         padding: 20px;
     }
+    .main-article__thumb {
+        height: 400px;
+    }
 
     .title {
         font-size: 30px;
@@ -1858,6 +1861,9 @@ article {
 
     .contact-list__item {
         justify-content: flex-start;
+    }
+    .checkbox:checked + label, .checkbox:not(:checked) + label {
+        font-size: 10px;
     }
 
     .subscribe {
